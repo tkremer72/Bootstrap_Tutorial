@@ -24,8 +24,8 @@
 }
 /* Resize the logo image */
 .header img.logo-image {
-     width: 75px;
-     height: 75px;
+     width: 65px;
+     height: 65px;
 }
 /* Change background color on mouseover event */
 .header a:hover {
@@ -81,8 +81,8 @@
      text-align: center;
 }
 canvas {
-     border: 5px outset darkslategrey;
-     border-radius: 20%;
+     border: 4px inset darkslategrey;
+     border-radius: 100%;
      padding: 0;
      margin: auto;
      display: block;
