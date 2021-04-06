@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
      <meta charset="UTF-8">
-     <meta name="title" content="Bootstrap tutorial">
+     <meta name="title" content="Responsive Image Gallery">
+     <meta name="keywords" content="Babel, Bootstrap, CSS, Flexbox, HTML, JavaScript, Image Gallery, Unsplash">
      <meta name="description" content="A comprehensive dive into Bootsrap and responsive design">
      <meta name="author" content="Thomas E. Kremer">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,35 +16,58 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- Bring in my files -->
-     <link rel="stylesheet" href="src/assets/css/bootstrap.css">
+     <link rel="stylesheet" href="src/assets/css/image-gallery.css">
      <!-- <script src="src/scripts/index.js" defer></script> -->
-     <title>Bootstrap Tutorial</title>
+     <title>Image Gallery | Bootstrap Tutorial</title>
 </head>
 <body> 
-     <header class="header">
-          <a href="#company" class="logo">
-               <img src="src/assets/images/seethrough_1.png" alt="seethrough_1" class="logo-image">
-               <span class="logo-text">WebTek</span>
-          </a>
-          <div class="header-right">
-              
-          </div>
-     </header>
+     <!-- Header & Navigation -->
+          <nav class="navbar">
+               <div class="logo-container">
+                    <a href="#webtek-info">
+                           <img src="src/assets/images/seethrough_1.png" alt="seethrough_1" class="logo-image">
+                           <span class="logo-text">Webtek</span>
+                     </a>
+               </div>
+  
+               <ul class="nav-list" id="navi-list">
+                   <li class="list-item">
+                           <a href="#about-me">About Us</a>
+                   </li>
+                    <li class="list-item">
+                           <a href="#contact">Contact</a>
+                     </li>
+                     <li class="list-item">
+                           <a href="#contact">Support</a>
+                     </li>
+               </ul>
+                  <!-- <div class="menu" id="toggle-menu" onclick="toggleMenu()"> -->
+                 <div class="menu" id="toggle-menu">
+                         <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                        <div class="menu-line"></div>
+                 </div>
+          </nav>
      
-     
-             <div class="container">
+           <!-- Main Content -->
+
+             <div class="main-content-fluid">
+                  <h2>Simple Image Gallery.  Images provided by Unsplash.</h2>
                <canvas id="image-gallery" style="margin-top: 112px; margin-bottom: 25px;"></canvas>
              </div>
 
-        <div class="footer">
-             <div class="footer-logo">
-               <img src="src/assets/images/seethrough_1.png" alt="seethrough_1" class="footer-image">
-               <span class="webtek-text">&nbsp;&copy; WebTek</span>
-             </div>
-             <div class="footer-text">
-               This page designed and created by <span><a class="webmaster-contact" href="mailto: tkremer@nc.rr.com" style="text-decoration: none;" id="company">Thomas E. Kremer</a></span>
-             </div>
-        </div>
-     <script src="dist/build.js" defer></script>
+             <!-- Footer  -->
+             <div class="footer-container-fluid">
+               <div class="logo-copyright">
+                    <img src="src/assets/images/seethrough_1.png" alt="seethrough_1" class="footer-logo">
+                    <span class="footer-text">WebTek</span>
+               </div>
+              <div class="webmaster-contact" id="webtek-info">
+                   <span class="footer-info">This page created and designed by</span>
+                   <a href="mailto: tkremer@nc.rr.com" class="webmaster" id="contact">Thomas E. Kremer</a>
+              </div>
+          </div>
+          
+  <script src="dist/build.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,230 @@
+/* Resetting the page css properties */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.logo-image {
+  width: 55px;
+  height: auto;
+}
+.logo-text {
+  font-family: Montserrat Alternates;
+  font-weight: 600;
+  font-style: none;
+  font-size: 36px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+}
+.navbar a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+.navbar a:hover {
+  color: #94A2FB;
+}
+.navbar {
+  align-items: center;
+  background-color: #FFFFFF;
+  color: rgba(0, 0, 0, 1);
+  display: flex;
+  font-family: Poppins;
+  font-size: 25px;
+  justify-content: space-around;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+/* Hide menu on larger screens */
+.menu {
+  display: none;
+}
+.menu-line {
+  background-color: #94A2FB;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 4px;
+}
+
+/* Style the footer and footer elements */
+   .footer-logo {
+     margin-top: 0px;
+     margin-bottom: 10px;
+     width: 55px;
+     height: 55px;
+}
+
+.footer-text {
+  margin-top: 25px;
+  font-family: Montserrat Alternates;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 21px;
+}
+.webmaster {
+  text-decoration: none;
+}
+.footer-info {
+  width: 100%;
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+}
+.webmaster-contact {
+  margin-top: 13px;
+}
+.footer-container-fluid {
+     display: flex;
+     justify-content: space-evenly;
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: #FFFFFF;
+     text-align: center;
+}
+
+h2 {
+     font-family: Poppins;
+     font-weight: 200;
+     font-size: 36px;
+     line-height: 32px;
+     letter-spacing: 0.03em;
+}
+
+.main-content-fluid {
+     display: flex;
+     justify-content: center;
+     position: relative;
+     width: 100%;
+     text-align: center;
+}
+canvas {
+     border: 4px inset darkslategrey;
+     border-radius: 10%;
+     padding: 0;
+     margin: auto;
+     display: flex;
+     width: 750px;
+     height: 470px;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+   }
+
+
+/* Media query for smaller devices, hamburger menu */
+@media all and (max-width: 480px) {
+  /* Center the main content, justify the text on small screens */
+  .main-content-fluid {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+ 
+canvas {
+     border: 4px inset darkslategrey;
+     border-radius: 15%;
+     padding: 0;
+     margin: auto;
+     display: block;
+     width: 300px;
+     height: 300px;
+   }
+   h2 {
+     font-family: Poppins;
+     font-weight: 200;
+     font-size: 26px;
+     line-height: 32px;
+     letter-spacing: 0.03em;
+}
+/* Style the navigation and the header */
+  .navbar {
+    flex-direction: column;
+    position: relative;
+  }
+  .logo-container {
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+/* Show menu */
+.menu {
+  display: block;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+}
+.nav-list {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  display: none;
+}
+.nav-list .list-item {
+  display: block;
+  border-top: 1px solid black;
+  padding: 10px;
+}
+/* Style the footer container and information */
+.footer-container-fluid {
+  padding: 10px;
+  flex-direction: column;
+  width: 100%;
+  height: 125px;
+}
+/* Style the logo and logo text */
+.footer-logo {
+  margin-top: 5px;
+  width: 45px;
+  height: auto;
+}
+.footer-text {
+  font-family: Montserrat Alternates;
+  font-weight: 600;
+  font-style: none;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+}
+.webmaster-contact {
+  padding: 0;
+  margin: 0;
+}
+.footer-info {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+}
+.webmaster {
+  font-family: Poppins;
+  font-weight: 200;
+  font-size: 16px;
+  color: #94A2FB;
+}
+/* Show the hamburger menu  */
+.active {
+  display: block;
+}
+}
+
+
+
