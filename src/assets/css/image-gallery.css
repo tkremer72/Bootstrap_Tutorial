@@ -97,13 +97,13 @@
 h2 {
      font-family: Poppins;
      font-weight: 200;
-     font-size: 36px;
      line-height: 32px;
      letter-spacing: 0.03em;
 }
 
 .main-content-fluid {
      display: flex;
+     margin-bottom: 615px;
      justify-content: center;
      position: relative;
      width: 100%;
